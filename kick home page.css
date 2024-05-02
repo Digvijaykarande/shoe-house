@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height:310vh;
+    background-color: rgb(33, 32, 32);
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+#loadingpage{position: relative;
+    width: 100%;
+    height:100vh;
+    background-color:rgb(0, 0, 0);
+}
+#loading-txt{
+   position: relative;
+   top:40vh;
+    font-size:50PX;
+}
+
+#loader{position: relative;
+    width: 150px;
+    height: 150px;
+    top: 40vh;
+    left: 50%;
+    border: 7px solid red;
+    border-radius: 50%;
+    border-top:rgb(255, 255, 255);
+    border-left: rgb(130, 249, 130);
+    border-bottom: rgb(122, 96, 100);
+    animation: loader;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader{
+    0%{transform: rotate(90deg); border-color: red;}
+    40%{transform: rotate(180deg); border-color: rgb(231, 243, 68);}
+    80%{transform: rotate(270deg); border-color: rgb(79, 183, 97);}
+    100%{transform: rotate(360deg); border-color: rgb(94, 218, 232);}  
+}
+.nav{margin-top:2vh;
+    margin-left: 3vw;
+    display: flex;
+    width: 36%;
+    gap:3vw;
+    height: 7.6vh;
+    color: rgb(27, 27, 27);
+    background-color: rgb(21, 20, 20);
+}
+#page1{width:100%;
+    height: 100vh;
+    position: absolute;
+    background-color:#fff;
+}
+#btn-tp{
+    color:rgb(242, 240, 240);
+    background-color: rgb(14, 14, 14);
+}
+#btn-tp:hover{
+   cursor: pointer;
+}
+#name{margin-top:1.5%;
+    margin-left: 2vw;
+    color:rgb(11, 11, 11);
+    font-size:9vw;
+}
+
+sup{
+    font-size:2vw;
+}
+#cart{margin-left:90vw;
+    margin-top: -6vh;
+    width: 5vw;
+    height:5vh;
+}
+#addcart-img{
+    width: 3vw;
+    height:4vh;
+    mix-blend-mode:rgb(1, 1, 1);
+}
+#r-shoe-i{margin-left: 44vw;
+    margin-top:-45%;
+    width: 50%;
+    height: 72%;
+}
+#addcart-img:hover{
+    cursor: pointer;
+}
+#cartsection{position: relative;
+    width:26%;
+    height:60vh;
+    border: 3px solid black;
+    background-color:white;
+    top: -24vh;
+    left:100vw;
+    transition: all 2s;
+    color: black;
+    z-index: 2;
+}
+@media (max-width:500px) {
+    #r-shoe-i{margin-left:50vw;
+        margin-top:-70%;
+    }
+    #name{margin-top:3.5%;
+        margin-left: 2vw;
+        font-size:14vw;
+    }
+    #addcart-img {
+        width: 8vw;
+    }
+    #cartsection {
+        width: 45%;
+        height: 35vh;
+        top: -11vh;
+    }
+}
+
+
+
+#page2{
+    margin-left:0;
+    margin-top:102vh;
+    width: 100%;
+    height:220%;
+    background-color: white;
+}
+.the-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#search-me{
+    border: 2px solid black;
+    width: 20vw;
+    height: 4vh;
+}
+#src-btn{position: relative;
+    width: 12%;
+    height: 4%;
+    top:0.1vh;
+}
+#scrolldown{
+    margin-top:-2vh;
+    width: 17vw;
+    height: 5.9vh;
+    background-color: crimson;
+    font-size: larger;
+    border-radius: 10px;
+    border: 3px solid crimson;
+    cursor: pointer;
+    animation: scroll;
+    animation-duration:1s;
+    animation-timing-function: ease-in;
+    animation-delay:0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0%{transform:translateY(0);}
+    50%{transform: translateY(-30px);}
+    100%{transform:translateY(0);}
+}
+#categry-txt{margin-top: 1vh;
+    font-size:5vw;
+    color:black;
+    text-transform: capitalize;
+}
+#card-section{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    
+}
+
+#card-img1{
+    width:50%;
+    height:40%;
+}
+#card-section{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1vw;
+    margin-right: 5vw;
+   
+}
+#card1{cursor: pointer;
+    width:25vw;
+    height:40%;
+    border: 3px solid black;
+    
+}
+
+#addcardbtn{
+    position:static;
+    color: black;
+    background-color:#b4b4b4;
+    border-radius:5px;
+    width:10vw;
+    height:5vh;
+    padding:3px 4px ;
+    cursor: pointer;
+}
+#addednotify{
+    position: relative;
+    color: black;
+    visibility:hidden;
+    
+}
+#add-cartt{
+    background-color: yellow;
+    visibility: hidden;
+}
+#addednote{
+    color:black;
+    visibility:hidden;
+    position: relative;
+    left: 5%;
+    top:-6vh;
+}
+#shoe-category{
+    margin-top:-1.5vh;
+    color:black;
+    
+}
+#discount-txt{margin-top:-2.3vh;
+    color:red;
+    
+}
+#price-txt{
+    color:blue;
+    
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    width: 100%;
+    height:22%;
+    background-color: rgb(66, 65, 65);
+}
+#f-l-txt{
+    margin-top: -4%;
+    color:white;
+}
+@media (max-width:500px) {
+    #card1 {
+        width: 45vw;
+        height: 34vh;
+    }
+    #addcardbtn{
+        width:20vw;
+    }
+    #discount-txt {
+        margin-top: 0.5vh;
+    }
+    #shoe-category{
+        margin-top: 1.5vh;
+    }
+    #categry-txt{
+        font-size:8vw;
+    }
+    #search-me{
+        width: 32vw;
+    }
+    #scrolldown {
+        margin-top:10vh;
+        width: 20vw;
+    }
+}
+
+
